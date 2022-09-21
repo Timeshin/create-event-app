@@ -1,0 +1,30 @@
+@import "../../../styles/variables.scss";
+
+.button {
+  display: flex;
+  justify-content: center;
+  border: none;
+  outline: none;
+  color: white;
+  background: linear-gradient(90deg, $secondary 3.25%, $primaryBackground 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  width: 320px;
+  cursor: pointer;
+}
+
+@media (max-width: 960px) {
+  .button {
+    width: 310px;
+  }
+}
+
+@media (max-width: 560px) {
+  .button {
+    width: 190px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,31 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .content {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 26px;
+  }
+}
+
+@media (max-width: 960px) {
+  .wrapper {
+    .content {
+      flex-direction: column-reverse;
+      gap: 50px;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .wrapper {
+    .content {
+      flex-direction: column-reverse;
+      gap: 34px;
+    }
+  }
+}
